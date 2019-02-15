@@ -1,0 +1,23 @@
+import numpy as np
+import matplotlib.pyplot as plt
+t=np.linspace(-np.pi,np.pi,100)
+x=np.linspace(0,8,1000)
+y=np.linspace(-8,2,1000)
+r=2
+x=3+r*np.cos(t)
+y=-2+r*np.sin(t)
+plt.plot(x,y)
+plt.grid()
+plt.axis('equal')
+plt.legend(loc=1,prop={'size':8})
+plt.xlabel('$x$')
+plt.ylabel('$y$')
+plt.plot(3,0,'o')
+plt.text(3,0,"$A$")
+plt.plot(1,-2,'o')
+plt.text(1,-2,"$B$")
+plt.plot(5,-2,'o')
+plt.text(5,-2,"$D$")
+plt.plot(3,-2,'o')
+plt.text(3,-2,"$C$")
+plt.show()
